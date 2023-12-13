@@ -1,0 +1,92 @@
+<app-sidebar [isExpanded]="sidebarExpanded" (toggleSidebar)="sidebarExpanded = !sidebarExpanded"></app-sidebar>
+<div class="content" [ngClass]="{ 'sidebarExpanded': sidebarExpanded }">
+    
+    <div class="content">
+        <div class="split">
+     <div class="left" style="padding-left: 10px;margin-top: 5px;">
+         <span style="color: rgba(100,96,96,1);font-family: poppins;font-size: 10px;text-align: end;margin-left: 2px;"> Today, 23 December 2023</span> 
+         &nbsp; <img src="assets/images/downarrow.png" style="width: 18px;">
+         <p>
+             <input type="text" class="searchinput" placeholder="Search">
+         </p>
+     </div>
+     <div class="right">
+         <table cellspacing="10"> 
+             <tr> 
+                 <td style="padding-right: 10px;">  
+                     <img style="width: 30px;" src="assets/images/noti.png">
+                     </td>
+               <td style="padding-right: 16px;">  
+                 <div style="margin-top: 20px;">   
+             <h5 style="color: rgba(102,49,48,1);font-family: Poppins;font-size: 14px;margin-bottom: 0.2rem;">Medow Pit</h5>  
+             <p style="color: rgba(100,96,96,1);font-family: poppins;font-size: 8px;text-align: end;">Administrator</p> 
+             </div>   
+               </td> 
+               <td  style="padding-right: 16px;"> 
+                 <img style="width: 50px;
+                 border-radius: 50%;
+                 height: 40px;" src="assets/images/person.png">
+               </td> 
+               <td style="padding-right: 20px;">
+                 <img src="assets/images/downarrow.png" style="width: 18px;">
+               </td>
+             </tr> 
+           </table> 
+     </div>
+        </div>
+        <br/>
+        <div style="padding: 20px;border: 1px solid darkgrey;">
+          <div style="display: flex;justify-content: space-between;">
+            <p>
+              <input type="text" class="searchinput" style="width: 170%;border: 1px solid darkgrey;" placeholder="Search Leads">
+          </p>
+          <div style="display: inherit;align-items: center;">
+            <button style="color:black;    margin-bottom: 0.5rem;width: 120px;
+font-size: 15px !important;background-color:rgba(249,237,232,1) !important;padding: 6px;border-radius: 5px;border: none;" type="button"><img style="width: 18px;margin-top: -3px;" src="assets/images/calendar.png">&nbsp;&nbsp;Date</button>
+    &nbsp;&nbsp;&nbsp;
+    <button style="color:black;    margin-bottom: 0.5rem;width: 120px;
+      font-size: 15px !important;background-color:rgba(249,237,232,1) !important;padding: 6px;border-radius: 5px;border: none;" type="button"><img style="width: 18px;margin-top: -3px;" src="assets/images/download.png">&nbsp;&nbsp;Download</button>     
+      </div>
+      </div>
+      <br/>
+        <table class="table">
+          <thead style="background-color: rgba(252,238,232,1) !important;">
+            <tr>
+              <th scope="col" style="border: none;font-family: Poppins;font-weight: 100;padding: 12px;">Name</th>
+              <th scope="col"  style="border: none;font-family: Poppins;font-weight: 100;padding: 12px;">Date</th>
+              <th scope="col"  style="border: none;font-family: Poppins;font-weight: 100;padding: 12px;">Email ID</th>
+              <th scope="col"  style="border: none;font-family: Poppins;font-weight: 100;padding: 12px;">Phone Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" style="font-family: poppins;font-weight: 100;padding: 30px 0px 30px 12px;">Garry Harter</th>
+              <td style="font-family: poppins;padding: 30px 0px 30px 12px;">2/10/2023</td>
+              <td style="font-family: poppins;padding: 30px 0px 30px 12px;">garry.h@gmail.com</td>
+              <td style="font-family: poppins;padding: 30px 0px 30px 12px;">+91-9820523446</td>
+            </tr>
+            <tr>
+              <th scope="row" style="font-family: poppins;font-weight: 100;padding: 30px 0px 30px 12px;">Jenny Wilson</th>
+              <td style="font-family: poppins;padding: 30px 0px 30px 12px;">2/10/2023</td>
+              <td style="font-family: poppins;padding: 30px 0px 30px 12px;">jenny.w@gmail.com</td>
+              <td style="font-family: poppins;padding: 30px 0px 30px 12px;">+91-9819453455</td>
+            </tr>
+            <tr>
+              <th scope="row" style="font-family: poppins;font-weight: 100;padding: 30px 0px 30px 12px;">Albert Flores</th>
+              <td style="font-family: poppins;padding: 30px 0px 30px 12px;">2/10/2023</td>
+              <td style="font-family: poppins;padding: 30px 0px 30px 12px;">albertflores@gmail.com</td>
+              <td style="font-family: poppins;padding: 30px 0px 30px 12px;">+91-9819453455</td>
+            </tr>
+            <tr>
+              <th scope="row" style="font-family: poppins;font-weight: 100;padding: 30px 0px 30px 12px;">Darell Steward</th>
+              <td style="font-family: poppins;padding: 30px 0px 30px 12px;">2/10/2023</td>
+              <td style="font-family: poppins;padding: 30px 0px 30px 12px;">stewardD@gmail.com</td>
+              <td style="font-family: poppins;padding: 30px 0px 30px 12px;">+91-9819453455</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <br/>
+        </div>
+        </div>
+

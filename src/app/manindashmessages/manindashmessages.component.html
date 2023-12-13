@@ -1,0 +1,40 @@
+<app-sidebar [isExpanded]="sidebarExpanded" (toggleSidebar)="sidebarExpanded = !sidebarExpanded"></app-sidebar>
+<div class="content" [ngClass]="{ 'sidebarExpanded': sidebarExpanded }">
+    
+    <div class="content">
+        <div class="split">
+     <div class="left" style="padding-left: 10px;margin-top: 5px;">
+         <span style="color: rgba(100,96,96,1);font-family: poppins;font-size: 10px;text-align: end;margin-left: 2px;"> Today, 23 December 2023</span> 
+         &nbsp; <img src="assets/images/downarrow.png" style="width: 18px;">
+         <p>
+             <input type="text" class="searchinput" placeholder="Search">
+         </p>
+     </div>
+     <div class="right">
+         <table cellspacing="10"> 
+             <tr> 
+                 <td style="padding-right: 10px;">  
+                     <img style="width: 30px;" src="assets/images/noti.png">
+                     </td>
+               <td style="padding-right: 16px;">  
+                 <div style="margin-top: 20px;">   
+             <h5 style="color: rgba(102,49,48,1);font-family: Poppins;font-size: 14px;margin-bottom: 0.2rem;">Medow Pit</h5>  
+             <p style="color: rgba(100,96,96,1);font-family: poppins;font-size: 8px;text-align: end;">Administrator</p> 
+             </div>   
+               </td> 
+               <td  style="padding-right: 16px;"> 
+                 <img style="width: 50px;
+                 border-radius: 50%;
+                 height: 40px;" src="assets/images/person.png">
+               </td> 
+               <td style="padding-right: 20px;">
+                 <img src="assets/images/downarrow.png" style="width: 18px;">
+               </td>
+             </tr> 
+           </table> 
+     </div>
+        </div>
+        <br/>
+        </div>
+        </div>
+
